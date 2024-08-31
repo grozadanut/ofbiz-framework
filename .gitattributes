@@ -26,7 +26,8 @@ LICENSE      text
 rc.ofbiz.*   text
 *.less       text
 *.adoc       text
-*.sh         eol=lf
+*.sh         text eol=lf
+gradlew      text eol=lf
 
 # Declare files that will always have CRLF line endings on checkout.
 *.bat        text eol=crlf
