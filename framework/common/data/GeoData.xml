@@ -39,6 +39,7 @@ under the License.
     <GeoAssocType geoAssocTypeId="COUNTY_CITY" description="City in a county"/>
     <GeoAssocType geoAssocTypeId="COUNTY_SEAT" description="Administrative Main City of a County"/>
     <GeoAssocType geoAssocTypeId="POSTAL_CODE" description="Postal code associated to a GeoType"/>
+	<GeoAssocType geoAssocTypeId="REGION_CITY" description="City that belongs to a certain region"/>
 
     <!--
         Based on: ISO 3166  https://www.iso.org/obp/ui/#search 
