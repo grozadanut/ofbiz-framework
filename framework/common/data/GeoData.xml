@@ -368,4 +368,5 @@ under the License.
     <CountryAddressFormat geoId="TUR" geoAssocTypeId="REGIONS"/>
     <CountryAddressFormat geoId="ZAF" geoAssocTypeId="REGIONS"/>
     <CountryAddressFormat geoId="JPN" geoAssocTypeId="REGIONS" postalCodeRegex="\d{3}-\d{4}"/>
+    <CountryAddressFormat geoId="ROU" geoAssocTypeId="REGIONS" requireStateProvinceId="N"/>
 </entity-engine-xml>
