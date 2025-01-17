@@ -34,7 +34,7 @@ del temp.txt
 
 rem Clone and set if new else simply add
 if NOT EXIST plugins\.git\ (
-    git clone --depth 1 --sparse --single-branch --branch %branch% https://github.com/apache/ofbiz-plugins.git plugins
+    git clone --depth 1 --sparse --single-branch --branch %branch% https://github.com/grozadanut/ofbiz-plugins.git plugins
     cd plugins
     git sparse-checkout set %1
 ) else (
