@@ -23,4 +23,27 @@
     <!-- create recurring job to check email communication events with the status COM_IN_PROGRESS to send these emails.. -->
     <TemporalExpression tempExprId="SENDEMAIL" tempExprTypeId="FREQUENCY" description="Every 15 Minutes" integer1="12" integer2="15"/>
     <JobSandbox jobId="SENDEMAIL" jobName="Send Email" runTime="2000-01-01 00:00:00.000" serviceName="sendEmailDated" poolId="pool" runAsUser="system" tempExprId="SENDEMAIL" maxRecurrenceCount="-1"/>
+
+    <!-- The main Company Internal Organization -->
+    <Party partyId="LINIC" partyTypeId="PARTY_GROUP" statusId="PARTY_ENABLED"/>
+    <PartyGroup partyId="LINIC" groupName="LINIC SRL"/>
+    <PartyRole partyId="LINIC" roleTypeId="BILL_FROM_VENDOR"/>
+    <PartyRole partyId="LINIC" roleTypeId="BILL_TO_CUSTOMER"/>
+    <PartyRole partyId="LINIC" roleTypeId="INTERNAL_ORGANIZATIO"/>
+    <PartyRole partyId="LINIC" roleTypeId="_NA_"/>
+    <PartyStatus partyId="LINIC" statusId="PARTY_ENABLED" statusDate="2001-01-01 12:00:00.0"/>
+    <ContactMech contactMechId="9000" contactMechTypeId="POSTAL_ADDRESS"/>
+    <PartyContactMech partyId="LINIC" contactMechId="9000" fromDate="2000-01-01 00:00:00.000" allowSolicitation="Y"/>
+    <PostalAddress contactMechId="9000" toName="LINIC SRL" address1="218/A" city="Margine" postalCode="417011" countryGeoId="ROU" countyGeoId="RO-BH"/>
+    <ContactMech contactMechId="LINIC" contactMechTypeId="EMAIL_ADDRESS" infoString="sclinicsrl@gmail.com"/>
+    <PartyContactMech partyId="LINIC" contactMechId="LINIC" fromDate="2000-01-01 00:00:00.000" allowSolicitation="Y"/>
+    <PartyContactMechPurpose contactMechPurposeTypeId="PRIMARY_EMAIL" partyId="LINIC" contactMechId="LINIC" fromDate="2003-01-01 00:00:00.000"/>
+    <PartyContactMechPurpose partyId="LINIC" contactMechId="9000" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2000-01-01 00:00:00.000"/>
+    <PartyContactMechPurpose partyId="LINIC" contactMechId="9000" contactMechPurposeTypeId="GENERAL_LOCATION" fromDate="2000-01-01 00:00:00.000"/>
+    <PartyContactMechPurpose partyId="LINIC" contactMechId="9000" contactMechPurposeTypeId="PAYMENT_LOCATION" fromDate="2000-01-01 00:00:00.000"/>
+
+	<Facility facilityId="L1" facilityTypeId="WAREHOUSE" facilityName="Linic Depozit"
+              ownerPartyId="LINIC" defaultInventoryItemTypeId="NON_SERIAL_INV_ITEM" defaultDaysToShip="1"/>
+    <Facility facilityId="L2" facilityTypeId="WAREHOUSE" facilityName="Colibri Depozit"
+              ownerPartyId="LINIC" defaultInventoryItemTypeId="NON_SERIAL_INV_ITEM" defaultDaysToShip="1"/>
 </entity-engine-xml>
